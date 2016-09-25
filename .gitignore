@@ -1,0 +1,13 @@
+*.class
+.cache
+.classpath
+.project
+.DS_Store
+.metadata
+.settings
+*.log
+commons-scxml
+bin
+ctteCoop/
+target
+demonstrator/build
