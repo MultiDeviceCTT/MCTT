@@ -48,6 +48,7 @@ Scenario 1 has two devices, a (simulated) smartphone and a (simulated) microwave
 <path_to_simulation_environment>/MCTTClient-build/MCTTClient --model ../../Samples/scenario1/SPModel.qml --proxies mwproxy
 ``` 
 It automatically connects to `localhost:9000`. If you want to specify a different server location, provide the information via `--server` and `--port` command line arguments. As a result, the MCTTClient with the smartphone interface starts and you should see something like this:
+
 ![Smartphone](img/smartphone.png "Smartphone")
 
 The following command starts the microwave:
@@ -55,7 +56,8 @@ The following command starts the microwave:
 <path_to_simulation_environment>/MCTTClient-build/MCTTClient --model ../../Samples/scenario1/MWModel.qml --proxies spproxy
 ``` 
 This results in the following microwave interface:
-![Microwave](img/smartphone.png "Microwave")
+
+![Microwave](img/microwave.png "Microwave")
 
 Both client instances automatically connect to the server and initialize their state machines. You can now press a button on any of the device and see the corresponding reactions on both devices.
 
