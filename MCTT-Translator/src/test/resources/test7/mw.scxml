@@ -1,0 +1,79 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_292_8_mw_mw">
+<state id="init_292_8_mw_mw">
+<transition event="selectPizza_mw" target="selectPizza_finished_mw_mw_a85_9"/>
+<transition event="selectPizza_md" target="selectPizza_finished_md_mw_90e_9"/>
+<transition event="selectCookingMode_mw" target="selectCookingMode_finished_mw_mw_335_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectPizza_finished_mw_mw_a85_9">
+<transition event="confirmPizzaSelection_mw" target="defrost_mw_mw_a85_9_6cf_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="defrost_mw_mw_a85_9_6cf_a">
+<transition event="defrost_finished_mw" target="cook_mw_mw_a85_9_6cf_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="cook_mw_mw_a85_9_6cf_a">
+<transition event="cook_finished_mw" target="final_3bd_b_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_3bd_b_mw_mw">
+<onexit>
+</onexit>
+</final>
+<state id="selectPizza_finished_md_mw_90e_9">
+<transition event="confirmPizzaSelection_md" target="defrost_mw_mw_90e_9_432_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="defrost_mw_mw_90e_9_432_b">
+<transition event="defrost_finished_mw" target="cook_mw_mw_90e_9_432_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="cook_mw_mw_90e_9_432_b">
+<transition event="cook_finished_mw" target="final_3bd_b_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectCookingMode_finished_mw_mw_335_8">
+<transition event="setPower_mw" target="par_192_9_mw_335_8_mw"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_192_9_mw_335_8_mw">
+<transition event="state.id.par_192_9_mw" target="final_3bd_b_mw_mw"/>
+<onexit>
+</onexit>
+<state id="comp_a70_a_mw_mw_335_8_mw_mw" initial="showConfig_mw_mw_335_8_mw_mw">
+<onexit>
+</onexit>
+<state id="showConfig_mw_mw_335_8_mw_mw">
+<transition event="showConfig_finished_mw" target="final_3c8_8_mw_mw_335_8_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_3c8_8_mw_mw_335_8_mw_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_063_8_mw_mw_335_8_mw_md" initial="pending_78a_9_md_mw_335_8_mw_md">
+<onexit>
+</onexit>
+<state id="pending_78a_9_md_mw_335_8_mw_md">
+<transition event="showConfig_finished_md" target="final_97c_b_mw_mw_335_8_mw_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_97c_b_mw_mw_335_8_mw_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+</scxml>

@@ -1,0 +1,64 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="system">
+<parallel id="system">
+<onexit>
+</onexit>
+<state id="mw_mw" initial="init_235_a_mw_mw">
+<onexit>
+</onexit>
+<state id="init_235_a_mw_mw">
+<transition event="pressstart_mw" target="timercountdown_mw_mw_45c_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="timercountdown_mw_mw_45c_b">
+<transition event="timercountdown_finished_mw" target="pending_bdb_b_md_mw_45c_b_f1a_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_bdb_b_md_mw_45c_b_f1a_b">
+<transition event="finishingalarm_finished_md" target="finishingalarm_finished_finished_md_mw_45c_b_f1a_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="finishingalarm_finished_finished_md_mw_45c_b_f1a_b">
+<transition event="confirmalaram_mw" target="final_d45_9_mw_mw"/>
+<transition event="confirmalaram_md" target="final_d45_9_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_d45_9_mw_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="md_md" initial="init_c29_b_md_md">
+<onexit>
+</onexit>
+<state id="init_c29_b_md_md">
+<transition event="pressstart_mw" target="pending_c52_b_mw_md_576_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_c52_b_mw_md_576_8">
+<transition event="timercountdown_finished_mw" target="finishingalarm_md_md_576_8_129_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="finishingalarm_md_md_576_8_129_a">
+<transition event="finishingalarm_finished_md" target="finishingalarm_finished_finished_md_md_576_8_129_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="finishingalarm_finished_finished_md_md_576_8_129_a">
+<transition event="confirmalaram_mw" target="final_b6e_b_md_md"/>
+<transition event="confirmalaram_md" target="final_b6e_b_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_b6e_b_md_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+</scxml>

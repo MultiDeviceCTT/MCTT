@@ -1,0 +1,44 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_b07_9_mw_mw">
+<state id="init_b07_9_mw_mw">
+<transition event="enterAddress_mw" target="openAddress_mw_mw_f92_8"/>
+<transition event="volumeUp_mw" target="volumeUp_finished_mw_mw_f92_8"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_606_9_mw_f92_8">
+<transition event="state.id.par_606_9_mw" target="final_bfb_b_mw_mw"/>
+<onexit>
+</onexit>
+<state id="comp_596_a_mw_mw_f92_8" initial="openAddress_mw_mw_f92_8">
+<onexit>
+</onexit>
+<state id="openAddress_mw_mw_f92_8">
+<transition event="openAddress_finished_mw" target="final_308_9_mw_mw_f92_8"/>
+<onexit>
+notify_openAddress_finished_mw
+</onexit>
+</state>
+<final id="final_308_9_mw_mw_f92_8">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_08e_8_mw_mw_f92_8" initial="volumeUp_finished_mw_mw_f92_8">
+<onexit>
+</onexit>
+<state id="volumeUp_finished_mw_mw_f92_8">
+<transition event="volumeDown_mw" target="final_c1e_b_mw_mw_f92_8"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_c1e_b_mw_mw_f92_8">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_bfb_b_mw_mw">
+<onexit>
+</onexit>
+</final>
+</scxml>

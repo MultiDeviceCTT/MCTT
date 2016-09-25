@@ -1,0 +1,74 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="system">
+<parallel id="system">
+<onexit>
+</onexit>
+<state id="mw_mw" initial="init_f9b_8_mw_mw">
+<onexit>
+</onexit>
+<state id="init_f9b_8_mw_mw">
+<transition event="pressstart_mw" target="timercountdown_mw_mw_03f_b"/>
+<transition event="pressstart_md" target="pending_95a_b_md_mw_38d_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="timercountdown_mw_mw_03f_b">
+<transition event="timercountdown_finished_mw" target="timercountdown_finished_finished_mw_mw_03f_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="timercountdown_finished_finished_mw_mw_03f_b">
+<transition event="confirmalarm_mw" target="final_35b_8_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_35b_8_mw_mw">
+<onexit>
+</onexit>
+</final>
+<state id="pending_95a_b_md_mw_38d_b">
+<transition event="timercountdown_finished_md" target="timercountdown_finished_finished_md_mw_38d_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="timercountdown_finished_finished_md_mw_38d_b">
+<transition event="confirmalarm_md" target="final_35b_8_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+</state>
+<state id="md_md" initial="init_de0_9_md_md">
+<onexit>
+</onexit>
+<state id="init_de0_9_md_md">
+<transition event="pressstart_mw" target="pending_d44_a_mw_md_762_8"/>
+<transition event="pressstart_md" target="timercountdown_md_md_77e_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_d44_a_mw_md_762_8">
+<transition event="timercountdown_finished_mw" target="timercountdown_finished_finished_mw_md_762_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="timercountdown_finished_finished_mw_md_762_8">
+<transition event="confirmalarm_mw" target="final_53b_b_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_53b_b_md_md">
+<onexit>
+</onexit>
+</final>
+<state id="timercountdown_md_md_77e_8">
+<transition event="timercountdown_finished_md" target="timercountdown_finished_finished_md_md_77e_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="timercountdown_finished_finished_md_md_77e_8">
+<transition event="confirmalarm_md" target="final_53b_b_md_md"/>
+<onexit>
+</onexit>
+</state>
+</state>
+</parallel>
+</scxml>

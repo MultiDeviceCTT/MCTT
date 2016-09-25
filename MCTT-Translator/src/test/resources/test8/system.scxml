@@ -1,0 +1,252 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="system">
+<parallel id="system">
+<onexit>
+</onexit>
+<state id="mw_mw" initial="init_2a9_a_mw_mw">
+<onexit>
+</onexit>
+<state id="init_2a9_a_mw_mw">
+<transition event="selectPizza_mw" target="selectPizza_finished_mw_mw_b6b_9"/>
+<transition event="selectPizza_md" target="selectPizza_finished_md_mw_9f7_b"/>
+<transition event="selectCookingMode_mw" target="selectCookingMode_finished_mw_mw_mw_mw"/>
+<transition event="selectCookingMode_md" target="selectCookingMode_finished_md_mw_md_md"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectPizza_finished_mw_mw_b6b_9">
+<transition event="confirmPizzaSelection_mw" target="defrost_mw_mw_b6b_9_b84_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="defrost_mw_mw_b6b_9_b84_a">
+<transition event="defrost_finished_mw" target="cook_mw_mw_b6b_9_b84_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="cook_mw_mw_b6b_9_b84_a">
+<transition event="cook_finished_mw" target="final_24c_b_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_24c_b_mw_mw">
+<onexit>
+</onexit>
+</final>
+<state id="selectPizza_finished_md_mw_9f7_b">
+<transition event="confirmPizzaSelection_md" target="defrost_mw_mw_9f7_b_cec_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="defrost_mw_mw_9f7_b_cec_8">
+<transition event="defrost_finished_mw" target="cook_mw_mw_9f7_b_cec_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="cook_mw_mw_9f7_b_cec_8">
+<transition event="cook_finished_mw" target="final_24c_b_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_b54_8_mw_mw">
+<transition event="state.id.par_b54_8_mw" target="pending_d8b_8_md_mw_17d_a"/>
+<onexit>
+</onexit>
+<state id="comp_be1_8_mw_mw_mw_mw" initial="selectCookingMode_finished_mw_mw_mw_mw">
+<onexit>
+</onexit>
+<state id="selectCookingMode_finished_mw_mw_mw_mw">
+<transition event="setPower_mw" target="final_f5c_b_mw_mw_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_f5c_b_mw_mw_mw_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_726_b_mw_mw_mw_md" initial="init_4a8_8_mw_mw_mw_md">
+<onexit>
+</onexit>
+<state id="init_4a8_8_mw_mw_mw_md">
+<transition event="selectCookingMode_md" target="selectCookingMode_finished_md_mw_mw_md"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectCookingMode_finished_md_mw_mw_md">
+<transition event="setPower_md" target="final_905_a_mw_mw_mw_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_905_a_mw_mw_mw_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<state id="pending_d8b_8_md_mw_17d_a">
+<transition event="showConfig_finished_md" target="final_24c_b_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_077_8_mw_md">
+<transition event="state.id.par_077_8_mw" target="pending_d8b_8_md_mw_17d_a"/>
+<onexit>
+</onexit>
+<state id="comp_218_a_mw_mw_md_mw" initial="init_154_8_mw_mw_md_mw">
+<onexit>
+</onexit>
+<state id="init_154_8_mw_mw_md_mw">
+<transition event="selectCookingMode_mw" target="selectCookingMode_finished_mw_mw_md_mw"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectCookingMode_finished_mw_mw_md_mw">
+<transition event="setPower_mw" target="final_37e_8_mw_mw_md_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_37e_8_mw_mw_md_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_23a_b_mw_mw_md_md" initial="selectCookingMode_finished_md_mw_md_md">
+<onexit>
+</onexit>
+<state id="selectCookingMode_finished_md_mw_md_md">
+<transition event="setPower_md" target="final_6e2_9_mw_mw_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_6e2_9_mw_mw_md_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+</state>
+<state id="md_md" initial="init_0bc_a_md_md">
+<onexit>
+</onexit>
+<state id="init_0bc_a_md_md">
+<transition event="selectPizza_mw" target="selectPizza_finished_mw_md_259_b"/>
+<transition event="selectPizza_md" target="selectPizza_finished_md_md_fc9_b"/>
+<transition event="selectCookingMode_mw" target="selectCookingMode_finished_mw_md_mw_mw"/>
+<transition event="selectCookingMode_md" target="selectCookingMode_finished_md_md_md_md"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectPizza_finished_mw_md_259_b">
+<transition event="confirmPizzaSelection_mw" target="pending_766_b_mw_md_259_b_74c_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_766_b_mw_md_259_b_74c_b">
+<transition event="defrost_finished_mw" target="pending_5ab_b_mw_md_259_b_74c_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_5ab_b_mw_md_259_b_74c_b">
+<transition event="cook_finished_mw" target="final_fc8_8_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_fc8_8_md_md">
+<onexit>
+</onexit>
+</final>
+<state id="selectPizza_finished_md_md_fc9_b">
+<transition event="confirmPizzaSelection_md" target="pending_e67_a_mw_md_fc9_b_cdd_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_e67_a_mw_md_fc9_b_cdd_b">
+<transition event="defrost_finished_mw" target="pending_68a_8_mw_md_fc9_b_cdd_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_68a_8_mw_md_fc9_b_cdd_b">
+<transition event="cook_finished_mw" target="final_fc8_8_md_md"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_729_8_md_mw">
+<transition event="state.id.par_729_8_md" target="showConfig_md_md_aba_8"/>
+<onexit>
+</onexit>
+<state id="comp_e3c_b_md_md_mw_mw" initial="selectCookingMode_finished_mw_md_mw_mw">
+<onexit>
+</onexit>
+<state id="selectCookingMode_finished_mw_md_mw_mw">
+<transition event="setPower_mw" target="final_9f2_8_md_md_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_9f2_8_md_md_mw_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_04c_8_md_md_mw_md" initial="init_b3d_9_md_md_mw_md">
+<onexit>
+</onexit>
+<state id="init_b3d_9_md_md_mw_md">
+<transition event="selectCookingMode_md" target="selectCookingMode_finished_md_md_mw_md"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectCookingMode_finished_md_md_mw_md">
+<transition event="setPower_md" target="final_89d_a_md_md_mw_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_89d_a_md_md_mw_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<state id="showConfig_md_md_aba_8">
+<transition event="showConfig_finished_md" target="final_fc8_8_md_md"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_e98_9_md_md">
+<transition event="state.id.par_e98_9_md" target="showConfig_md_md_aba_8"/>
+<onexit>
+</onexit>
+<state id="comp_777_a_md_md_md_mw" initial="init_1ab_a_md_md_md_mw">
+<onexit>
+</onexit>
+<state id="init_1ab_a_md_md_md_mw">
+<transition event="selectCookingMode_mw" target="selectCookingMode_finished_mw_md_md_mw"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectCookingMode_finished_mw_md_md_mw">
+<transition event="setPower_mw" target="final_335_9_md_md_md_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_335_9_md_md_md_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_061_8_md_md_md_md" initial="selectCookingMode_finished_md_md_md_md">
+<onexit>
+</onexit>
+<state id="selectCookingMode_finished_md_md_md_md">
+<transition event="setPower_md" target="final_630_b_md_md_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_630_b_md_md_md_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+</state>
+</parallel>
+</scxml>

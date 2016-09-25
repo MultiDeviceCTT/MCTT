@@ -1,0 +1,29 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_b34_a_md_md">
+<state id="init_b34_a_md_md">
+<transition event="selectPizza_mw" target="selectPizza_finished_mw_md_4ce_b"/>
+<transition event="selectPizza_md" target="selectPizza_finished_md_md_75c_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectPizza_finished_mw_md_4ce_b">
+<transition event="confirmSelection_mw" target="pending_b33_9_mw_md_439_b"/>
+<transition event="confirmSelection_md" target="pending_b33_9_mw_md_439_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_b33_9_mw_md_439_b">
+<transition event="cookPizza_finished_mw" target="final_a29_9_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_a29_9_md_md">
+<onexit>
+</onexit>
+</final>
+<state id="selectPizza_finished_md_md_75c_8">
+<transition event="confirmSelection_mw" target="pending_b33_9_mw_md_439_b"/>
+<transition event="confirmSelection_md" target="pending_b33_9_mw_md_439_b"/>
+<onexit>
+</onexit>
+</state>
+</scxml>

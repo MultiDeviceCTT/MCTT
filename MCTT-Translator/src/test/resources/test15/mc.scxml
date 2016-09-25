@@ -1,0 +1,84 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_fe8_8_mc_mc">
+<state id="init_fe8_8_mc_mc">
+<transition event="setCooking_md" target="setCooking_finished_md_mc_e4f_a"/>
+<transition event="setCooking_mc" target="setCooking_finished_mc_mc_89f_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="setCooking_finished_md_mc_e4f_a">
+<transition event="setPower_md" target="par_c89_9_mc_e4f_a_md"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_c89_9_mc_e4f_a_md">
+<transition event="state.id.par_c89_9_md" target="final_7c0_a_mc_mc"/>
+<onexit>
+</onexit>
+<state id="comp_c17_9_md_mc_e4f_a_md_mw" initial="pending_d35_a_mw_mc_e4f_a_md_mw">
+<onexit>
+</onexit>
+<state id="pending_d35_a_mw_mc_e4f_a_md_mw">
+<transition event="showConfig_finished_mw" target="final_42b_8_md_mc_e4f_a_md_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_42b_8_md_mc_e4f_a_md_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_cbb_9_md_mc_e4f_a_md_md" initial="pending_e5b_b_md_mc_e4f_a_md_md">
+<onexit>
+</onexit>
+<state id="pending_e5b_b_md_mc_e4f_a_md_md">
+<transition event="showConfig_finished_md" target="final_93d_a_md_mc_e4f_a_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_93d_a_md_mc_e4f_a_md_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_7c0_a_mc_mc">
+<onexit>
+</onexit>
+</final>
+<state id="setCooking_finished_mc_mc_89f_8">
+<transition event="setPower_mc" target="par_bea_b_mc_89f_8_mw"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_bea_b_mc_89f_8_mw">
+<transition event="state.id.par_bea_b_mc" target="final_7c0_a_mc_mc"/>
+<onexit>
+</onexit>
+<state id="comp_091_a_mc_mc_89f_8_mw_mw" initial="pending_20d_8_mw_mc_89f_8_mw_mw">
+<onexit>
+</onexit>
+<state id="pending_20d_8_mw_mc_89f_8_mw_mw">
+<transition event="showConfig_finished_mw" target="final_3c2_9_mc_mc_89f_8_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_3c2_9_mc_mc_89f_8_mw_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_f92_b_mc_mc_89f_8_mw_md" initial="pending_56d_9_md_mc_89f_8_mw_md">
+<onexit>
+</onexit>
+<state id="pending_56d_9_md_mc_89f_8_mw_md">
+<transition event="showConfig_finished_md" target="final_91e_a_mc_mc_89f_8_mw_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_91e_a_mc_mc_89f_8_mw_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+</scxml>

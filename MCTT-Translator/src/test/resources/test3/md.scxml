@@ -1,0 +1,42 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_058_9_md_md">
+<state id="init_058_9_md_md">
+<transition event="selectpizza_mw" target="selectpizza_finished_mw_md_5c5_9"/>
+<transition event="selectpizza_md" target="selectpizza_finished_md_md_9ac_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectpizza_finished_mw_md_5c5_9">
+<transition event="confirm_mw" target="pending_568_9_mw_md_5c5_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_568_9_mw_md_5c5_9">
+<transition event="defrost_finished_mw" target="pending_178_9_mw_md_5c5_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_178_9_mw_md_5c5_9">
+<transition event="cook_finished_mw" target="final_64d_8_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_64d_8_md_md">
+<onexit>
+</onexit>
+</final>
+<state id="selectpizza_finished_md_md_9ac_b">
+<transition event="confirm_md" target="defrost_md_md_9ac_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="defrost_md_md_9ac_b">
+<transition event="defrost_finished_md" target="cook_md_md_9ac_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="cook_md_md_9ac_b">
+<transition event="cook_finished_md" target="final_64d_8_md_md"/>
+<onexit>
+</onexit>
+</state>
+</scxml>

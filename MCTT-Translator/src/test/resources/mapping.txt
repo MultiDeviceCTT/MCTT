@@ -1,0 +1,15 @@
+[md]
+_controls = pizzaButton:visible, confirmButton:visible
+selectPizza = pizzaButton.clicked&confirmButton,testButton,xCombo
+confirmPizzaSelection = confirmButton.clicked^mdmodel.testData()
+showConfig = ^mdmodel.showConfig()
+
+[mw]
+_controls = selectionCombo:visible, confirmButton:enabled, powerButton:enabled
+selectPizza = confirmButton.clicked/selectionCombo.currentText === "Pizza"
+confirmPizzaSelection = confirmButton.clicked
+defrost = ^mwmodel.defrost()
+cook = ^mwmodel.cook()
+selectCookingMode = confirmButton.clicked/selectionCombo.currentText === "Manual"
+setPower = powerButton.clicked
+showConfig = mwmodel.showConfig()

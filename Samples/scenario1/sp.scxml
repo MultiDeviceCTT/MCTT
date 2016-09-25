@@ -1,0 +1,426 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="comp_6c6_8_sp_sp">
+<state id="comp_6c6_8_sp_sp" initial="init_cd3_b_sp_sp">
+<transition event="state.id.comp_6c6_8_sp" target="final_58b_8_sp_sp"/>
+<transition event="reset_sp" target="comp_6c6_8_sp_sp"/>
+<transition event="reset_mw" target="comp_6c6_8_sp_sp"/>
+<onexit>
+</onexit>
+<state id="init_cd3_b_sp_sp">
+<transition event="selectAutomaticMode_sp" target="selectAutomaticMode_finished_sp_sp_7af_8"/>
+<transition event="selectAutomaticMode_mw" target="selectAutomaticMode_finished_mw_sp_d1a_a"/>
+<transition event="selectManual_sp" target="selectManual_finished_sp_sp_78e_9"/>
+<transition event="selectManual_mw" target="selectManual_finished_mw_sp_aca_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectAutomaticMode_finished_sp_sp_7af_8">
+<transition event="selectPizza_sp" target="selectPizza_finished_sp_sp_7af_8"/>
+<transition event="selectFish_sp" target="pending_fcc_9_mw_sp_7af_8_c26_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectPizza_finished_sp_sp_7af_8">
+<transition event="choosePizza_sp" target="choosePizza_finished_sp_sp_7af_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="choosePizza_finished_sp_sp_7af_8">
+<transition event="confirmSelectedPizza_sp" target="pending_226_9_mw_sp_7af_8_68c_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_226_9_mw_sp_7af_8_68c_8">
+<transition event="defrost_finished_mw" target="pending_a49_a_mw_sp_7af_8_68c_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_a49_a_mw_sp_7af_8_68c_8">
+<transition event="bake_finished_mw" target="comp_8cc_8_mw_sp_7af_8_68c_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="comp_8cc_8_mw_sp_7af_8_68c_8" initial="par_709_9_sp_7af_8_68c_8_sp">
+<transition event="confirmPizzaAlarm_mw" target="final_92b_a_sp_sp"/>
+<transition event="confirmPizzaAlarm_sp" target="final_92b_a_sp_sp"/>
+<transition event="state.id.comp_8cc_8_mw" target="final_92b_a_sp_sp"/>
+<onexit>
+</onexit>
+<parallel id="par_709_9_sp_7af_8_68c_8_sp">
+<transition event="state.id.par_709_9_mw" target="final_979_8_mw_sp_7af_8_68c_8"/>
+<onexit>
+</onexit>
+<state id="comp_bbb_9_mw_sp_7af_8_68c_8_sp_mw" initial="pending_059_8_mw_sp_7af_8_68c_8_sp_mw">
+<onexit>
+</onexit>
+<state id="pending_059_8_mw_sp_7af_8_68c_8_sp_mw">
+<transition event="notifyPizzaFinished_finished_mw" target="final_bf8_a_mw_sp_7af_8_68c_8_sp_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_bf8_a_mw_sp_7af_8_68c_8_sp_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_17e_9_mw_sp_7af_8_68c_8_sp_sp" initial="notifyPizzaFinished_sp_sp_7af_8_68c_8_sp_sp">
+<onexit>
+</onexit>
+<state id="notifyPizzaFinished_sp_sp_7af_8_68c_8_sp_sp">
+<transition event="notifyPizzaFinished_finished_sp" target="final_a57_8_mw_sp_7af_8_68c_8_sp_sp"/>
+<onexit>
+notifyPizzaFinished_finished_sp
+</onexit>
+</state>
+<final id="final_a57_8_mw_sp_7af_8_68c_8_sp_sp">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_979_8_mw_sp_7af_8_68c_8">
+<onexit>
+</onexit>
+</final>
+</state>
+<final id="final_92b_a_sp_sp">
+<onexit>
+</onexit>
+</final>
+<state id="pending_fcc_9_mw_sp_7af_8_c26_b">
+<transition event="cook_finished_mw" target="comp_054_8_mw_sp_7af_8_c26_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="comp_054_8_mw_sp_7af_8_c26_b" initial="par_3fe_9_sp_7af_8_c26_b_sp">
+<transition event="confirmFishAlarm_mw" target="final_92b_a_sp_sp"/>
+<transition event="confirmFishAlarm_sp" target="final_92b_a_sp_sp"/>
+<transition event="state.id.comp_054_8_mw" target="final_92b_a_sp_sp"/>
+<onexit>
+</onexit>
+<parallel id="par_3fe_9_sp_7af_8_c26_b_sp">
+<transition event="state.id.par_3fe_9_mw" target="final_34f_a_mw_sp_7af_8_c26_b"/>
+<onexit>
+</onexit>
+<state id="comp_49d_8_mw_sp_7af_8_c26_b_sp_sp" initial="notifyFishFinished_sp_sp_7af_8_c26_b_sp_sp">
+<onexit>
+</onexit>
+<state id="notifyFishFinished_sp_sp_7af_8_c26_b_sp_sp">
+<transition event="notifyFishFinished_finished_sp" target="final_522_8_mw_sp_7af_8_c26_b_sp_sp"/>
+<onexit>
+notifyFishFinished_finished_sp
+</onexit>
+</state>
+<final id="final_522_8_mw_sp_7af_8_c26_b_sp_sp">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_5ac_a_mw_sp_7af_8_c26_b_sp_mw" initial="pending_b35_9_mw_sp_7af_8_c26_b_sp_mw">
+<onexit>
+</onexit>
+<state id="pending_b35_9_mw_sp_7af_8_c26_b_sp_mw">
+<transition event="notifyFishFinished_finished_mw" target="final_6a4_b_mw_sp_7af_8_c26_b_sp_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_6a4_b_mw_sp_7af_8_c26_b_sp_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_34f_a_mw_sp_7af_8_c26_b">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="selectAutomaticMode_finished_mw_sp_d1a_a">
+<transition event="selectPizza_mw" target="selectPizza_finished_mw_sp_d1a_a"/>
+<transition event="selectFish_mw" target="pending_87d_8_mw_sp_d1a_a_605_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="selectPizza_finished_mw_sp_d1a_a">
+<transition event="choosePizza_mw" target="choosePizza_finished_mw_sp_d1a_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="choosePizza_finished_mw_sp_d1a_a">
+<transition event="confirmSelectedPizza_mw" target="pending_a97_a_mw_sp_d1a_a_052_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_a97_a_mw_sp_d1a_a_052_b">
+<transition event="defrost_finished_mw" target="pending_831_a_mw_sp_d1a_a_052_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_831_a_mw_sp_d1a_a_052_b">
+<transition event="bake_finished_mw" target="comp_984_b_mw_sp_d1a_a_052_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="comp_984_b_mw_sp_d1a_a_052_b" initial="par_5a0_a_sp_d1a_a_052_b_sp">
+<transition event="confirmPizzaAlarm_mw" target="final_92b_a_sp_sp"/>
+<transition event="confirmPizzaAlarm_sp" target="final_92b_a_sp_sp"/>
+<transition event="state.id.comp_984_b_mw" target="final_92b_a_sp_sp"/>
+<onexit>
+</onexit>
+<parallel id="par_5a0_a_sp_d1a_a_052_b_sp">
+<transition event="state.id.par_5a0_a_mw" target="final_d0e_9_mw_sp_d1a_a_052_b"/>
+<onexit>
+</onexit>
+<state id="comp_590_9_mw_sp_d1a_a_052_b_sp_mw" initial="pending_fe6_8_mw_sp_d1a_a_052_b_sp_mw">
+<onexit>
+</onexit>
+<state id="pending_fe6_8_mw_sp_d1a_a_052_b_sp_mw">
+<transition event="notifyPizzaFinished_finished_mw" target="final_e2f_b_mw_sp_d1a_a_052_b_sp_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_e2f_b_mw_sp_d1a_a_052_b_sp_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_c1d_9_mw_sp_d1a_a_052_b_sp_sp" initial="notifyPizzaFinished_sp_sp_d1a_a_052_b_sp_sp">
+<onexit>
+</onexit>
+<state id="notifyPizzaFinished_sp_sp_d1a_a_052_b_sp_sp">
+<transition event="notifyPizzaFinished_finished_sp" target="final_4ce_8_mw_sp_d1a_a_052_b_sp_sp"/>
+<onexit>
+notifyPizzaFinished_finished_sp
+</onexit>
+</state>
+<final id="final_4ce_8_mw_sp_d1a_a_052_b_sp_sp">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_d0e_9_mw_sp_d1a_a_052_b">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="pending_87d_8_mw_sp_d1a_a_605_8">
+<transition event="cook_finished_mw" target="comp_1af_9_mw_sp_d1a_a_605_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="comp_1af_9_mw_sp_d1a_a_605_8" initial="par_0e1_8_sp_d1a_a_605_8_sp">
+<transition event="confirmFishAlarm_mw" target="final_92b_a_sp_sp"/>
+<transition event="confirmFishAlarm_sp" target="final_92b_a_sp_sp"/>
+<transition event="state.id.comp_1af_9_mw" target="final_92b_a_sp_sp"/>
+<onexit>
+</onexit>
+<parallel id="par_0e1_8_sp_d1a_a_605_8_sp">
+<transition event="state.id.par_0e1_8_mw" target="final_b16_8_mw_sp_d1a_a_605_8"/>
+<onexit>
+</onexit>
+<state id="comp_f02_9_mw_sp_d1a_a_605_8_sp_sp" initial="notifyFishFinished_sp_sp_d1a_a_605_8_sp_sp">
+<onexit>
+</onexit>
+<state id="notifyFishFinished_sp_sp_d1a_a_605_8_sp_sp">
+<transition event="notifyFishFinished_finished_sp" target="final_08e_9_mw_sp_d1a_a_605_8_sp_sp"/>
+<onexit>
+notifyFishFinished_finished_sp
+</onexit>
+</state>
+<final id="final_08e_9_mw_sp_d1a_a_605_8_sp_sp">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_fbb_b_mw_sp_d1a_a_605_8_sp_mw" initial="pending_5cf_9_mw_sp_d1a_a_605_8_sp_mw">
+<onexit>
+</onexit>
+<state id="pending_5cf_9_mw_sp_d1a_a_605_8_sp_mw">
+<transition event="notifyFishFinished_finished_mw" target="final_298_8_mw_sp_d1a_a_605_8_sp_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_298_8_mw_sp_d1a_a_605_8_sp_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_b16_8_mw_sp_d1a_a_605_8">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="selectManual_finished_sp_sp_78e_9">
+<transition event="setMinutes_sp" target="setMinutes_finished_sp_sp_78e_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="setMinutes_finished_sp_sp_78e_9">
+<transition event="setSeconds_sp" target="setSeconds_finished_sp_sp_78e_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="setSeconds_finished_sp_sp_78e_9">
+<transition event="setPower_sp" target="showConfiguration_sp_sp_78e_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="showConfiguration_sp_sp_78e_9">
+<transition event="showConfiguration_finished_sp" target="showConfiguration_finished_finished_sp_sp_78e_9"/>
+<onexit>
+showConfiguration_finished_sp
+</onexit>
+</state>
+<state id="showConfiguration_finished_finished_sp_sp_78e_9">
+<transition event="confirm_sp" target="pending_1b7_b_mw_sp_78e_9_96b_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_1b7_b_mw_sp_78e_9_96b_9">
+<transition event="enableHeater_finished_mw" target="pending_1fa_8_mw_sp_78e_9_96b_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_1fa_8_mw_sp_78e_9_96b_9">
+<transition event="countdown_finished_mw" target="pending_826_9_mw_sp_78e_9_96b_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_826_9_mw_sp_78e_9_96b_9">
+<transition event="disableHeater_finished_mw" target="comp_df7_a_mw_sp_78e_9_96b_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="comp_df7_a_mw_sp_78e_9_96b_9" initial="par_58f_9_sp_78e_9_96b_9_sp">
+<transition event="confirmManualAlarm_mw" target="final_92b_a_sp_sp"/>
+<transition event="confirmManualAlarm_sp" target="final_92b_a_sp_sp"/>
+<transition event="state.id.comp_df7_a_mw" target="final_92b_a_sp_sp"/>
+<onexit>
+</onexit>
+<parallel id="par_58f_9_sp_78e_9_96b_9_sp">
+<transition event="state.id.par_58f_9_mw" target="final_e5d_a_mw_sp_78e_9_96b_9"/>
+<onexit>
+</onexit>
+<state id="comp_1d7_a_mw_sp_78e_9_96b_9_sp_mw" initial="pending_ef2_8_mw_sp_78e_9_96b_9_sp_mw">
+<onexit>
+</onexit>
+<state id="pending_ef2_8_mw_sp_78e_9_96b_9_sp_mw">
+<transition event="notifyManualFinished_finished_mw" target="final_338_a_mw_sp_78e_9_96b_9_sp_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_338_a_mw_sp_78e_9_96b_9_sp_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_b94_b_mw_sp_78e_9_96b_9_sp_sp" initial="notifyManualFinished_sp_sp_78e_9_96b_9_sp_sp">
+<onexit>
+</onexit>
+<state id="notifyManualFinished_sp_sp_78e_9_96b_9_sp_sp">
+<transition event="notifyManualFinished_finished_sp" target="final_447_8_mw_sp_78e_9_96b_9_sp_sp"/>
+<onexit>
+notifyManualFinished_finished_sp
+</onexit>
+</state>
+<final id="final_447_8_mw_sp_78e_9_96b_9_sp_sp">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_e5d_a_mw_sp_78e_9_96b_9">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="selectManual_finished_mw_sp_aca_a">
+<transition event="setMinutes_mw" target="setMinutes_finished_mw_sp_aca_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="setMinutes_finished_mw_sp_aca_a">
+<transition event="setSeconds_mw" target="setSeconds_finished_mw_sp_aca_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="setSeconds_finished_mw_sp_aca_a">
+<transition event="setPower_mw" target="pending_087_8_mw_sp_aca_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_087_8_mw_sp_aca_a">
+<transition event="showConfiguration_finished_mw" target="showConfiguration_finished_finished_mw_sp_aca_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="showConfiguration_finished_finished_mw_sp_aca_a">
+<transition event="confirm_mw" target="pending_4e2_b_mw_sp_aca_a_a62_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_4e2_b_mw_sp_aca_a_a62_9">
+<transition event="enableHeater_finished_mw" target="pending_05c_8_mw_sp_aca_a_a62_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_05c_8_mw_sp_aca_a_a62_9">
+<transition event="countdown_finished_mw" target="pending_9c8_9_mw_sp_aca_a_a62_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_9c8_9_mw_sp_aca_a_a62_9">
+<transition event="disableHeater_finished_mw" target="comp_293_b_mw_sp_aca_a_a62_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="comp_293_b_mw_sp_aca_a_a62_9" initial="par_a92_a_sp_aca_a_a62_9_sp">
+<transition event="confirmManualAlarm_mw" target="final_92b_a_sp_sp"/>
+<transition event="confirmManualAlarm_sp" target="final_92b_a_sp_sp"/>
+<transition event="state.id.comp_293_b_mw" target="final_92b_a_sp_sp"/>
+<onexit>
+</onexit>
+<parallel id="par_a92_a_sp_aca_a_a62_9_sp">
+<transition event="state.id.par_a92_a_mw" target="final_7ca_a_mw_sp_aca_a_a62_9"/>
+<onexit>
+</onexit>
+<state id="comp_e13_b_mw_sp_aca_a_a62_9_sp_mw" initial="pending_16f_9_mw_sp_aca_a_a62_9_sp_mw">
+<onexit>
+</onexit>
+<state id="pending_16f_9_mw_sp_aca_a_a62_9_sp_mw">
+<transition event="notifyManualFinished_finished_mw" target="final_9b9_9_mw_sp_aca_a_a62_9_sp_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_9b9_9_mw_sp_aca_a_a62_9_sp_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_d42_9_mw_sp_aca_a_a62_9_sp_sp" initial="notifyManualFinished_sp_sp_aca_a_a62_9_sp_sp">
+<onexit>
+</onexit>
+<state id="notifyManualFinished_sp_sp_aca_a_a62_9_sp_sp">
+<transition event="notifyManualFinished_finished_sp" target="final_61f_b_mw_sp_aca_a_a62_9_sp_sp"/>
+<onexit>
+notifyManualFinished_finished_sp
+</onexit>
+</state>
+<final id="final_61f_b_mw_sp_aca_a_a62_9_sp_sp">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_7ca_a_mw_sp_aca_a_a62_9">
+<onexit>
+</onexit>
+</final>
+</state>
+</state>
+<final id="final_58b_8_sp_sp">
+<onexit>
+</onexit>
+</final>
+</scxml>

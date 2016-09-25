@@ -1,0 +1,74 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_6c1_b_md_md">
+<state id="init_6c1_b_md_md">
+<transition event="setHour_md" target="setHour_finished_md_md_108_9"/>
+<transition event="resetTime_md" target="resetTime_finished_md_md_108_9"/>
+<transition event="setHour_mw" target="setHour_finished_mw_md_353_9"/>
+<transition event="resetTime_mw" target="resetTime_finished_mw_md_353_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="comp_208_9_md_md_108_9" initial="setHour_finished_md_md_108_9">
+<transition event="resetTime_md" target="resetTime_finished_md_md_108_9"/>
+<transition event="state.id.comp_208_9_md" target="final_4ce_b_md_md"/>
+<onexit>
+</onexit>
+<state id="setHour_finished_md_md_108_9">
+<transition event="setMinute_md" target="setMinute_finished_md_md_108_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="setMinute_finished_md_md_108_9">
+<transition event="setSeconds_md" target="setSeconds_finished_md_md_108_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="setSeconds_finished_md_md_108_9">
+<transition event="confirmTime_md" target="final_d80_9_md_md_108_9"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_d80_9_md_md_108_9">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="resetTime_finished_md_md_108_9">
+<transition event="confirm_md" target="final_4ce_b_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_4ce_b_md_md">
+<onexit>
+</onexit>
+</final>
+<state id="comp_967_8_mw_md_353_9" initial="setHour_finished_mw_md_353_9">
+<transition event="resetTime_mw" target="resetTime_finished_mw_md_353_9"/>
+<transition event="state.id.comp_967_8_mw" target="final_4ce_b_md_md"/>
+<onexit>
+</onexit>
+<state id="setHour_finished_mw_md_353_9">
+<transition event="setMinute_mw" target="setMinute_finished_mw_md_353_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="setMinute_finished_mw_md_353_9">
+<transition event="setSeconds_mw" target="setSeconds_finished_mw_md_353_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="setSeconds_finished_mw_md_353_9">
+<transition event="confirmTime_mw" target="final_9eb_b_mw_md_353_9"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_9eb_b_mw_md_353_9">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="resetTime_finished_mw_md_353_9">
+<transition event="confirm_mw" target="final_4ce_b_md_md"/>
+<onexit>
+</onexit>
+</state>
+</scxml>

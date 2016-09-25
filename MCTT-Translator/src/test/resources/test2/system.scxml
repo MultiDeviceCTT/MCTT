@@ -1,0 +1,74 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="system">
+<parallel id="system">
+<onexit>
+</onexit>
+<state id="mw_mw" initial="init_8fd_9_mw_mw">
+<onexit>
+</onexit>
+<state id="init_8fd_9_mw_mw">
+<transition event="pressstart_mw" target="timercountdown_mw_mw_467_a"/>
+<transition event="pressstart_md" target="pending_229_a_md_mw_5d3_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="timercountdown_mw_mw_467_a">
+<transition event="timercountdown_finished_mw" target="pending_19c_9_md_mw_467_a_b9f_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_19c_9_md_mw_467_a_b9f_9">
+<transition event="finishingalarm_finished_md" target="final_c6c_9_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_c6c_9_mw_mw">
+<onexit>
+</onexit>
+</final>
+<state id="pending_229_a_md_mw_5d3_9">
+<transition event="timercountdown_finished_md" target="pending_954_a_md_mw_5d3_9_8ea_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_954_a_md_mw_5d3_9_8ea_9">
+<transition event="finishingalarm_finished_md" target="final_c6c_9_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+</state>
+<state id="md_md" initial="init_08c_8_md_md">
+<onexit>
+</onexit>
+<state id="init_08c_8_md_md">
+<transition event="pressstart_mw" target="pending_457_8_mw_md_c0c_a"/>
+<transition event="pressstart_md" target="timercountdown_md_md_8fa_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_457_8_mw_md_c0c_a">
+<transition event="timercountdown_finished_mw" target="finishingalarm_md_md_c0c_a_ee7_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="finishingalarm_md_md_c0c_a_ee7_9">
+<transition event="finishingalarm_finished_md" target="final_f49_9_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_f49_9_md_md">
+<onexit>
+</onexit>
+</final>
+<state id="timercountdown_md_md_8fa_a">
+<transition event="timercountdown_finished_md" target="finishingalarm_md_md_8fa_a_8c2_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="finishingalarm_md_md_8fa_a_8c2_8">
+<transition event="finishingalarm_finished_md" target="final_f49_9_md_md"/>
+<onexit>
+</onexit>
+</state>
+</state>
+</parallel>
+</scxml>

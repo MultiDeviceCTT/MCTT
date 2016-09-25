@@ -1,0 +1,21 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_5f5_9_mw_mw">
+<state id="init_5f5_9_mw_mw">
+<transition event="pressstart_mw" target="timercountdown_mw_mw_dca_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="timercountdown_mw_mw_dca_9">
+<transition event="timercountdown_finished_mw" target="pending_374_9_md_mw_dca_9_055_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_374_9_md_mw_dca_9_055_8">
+<transition event="finishingalarm_finished_md" target="final_cdd_9_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_cdd_9_mw_mw">
+<onexit>
+</onexit>
+</final>
+</scxml>

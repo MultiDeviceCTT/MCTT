@@ -1,0 +1,36 @@
+[rc]
+_controls 		= onOffButton:enabled, chanPlusButton:enabled, chanMinusButton:enabled, volMinusButton:enabled, volPlusButton:enabled, muteButton:enabled
+volumeUp		= volPlusButton.clicked
+volumeDown		= volMinusButton.clicked
+channelUp		= chanPlusButton.clicked 
+channelDown		= chanMinusButton.clicked
+softSwitchOn	= onOffButton.clicked
+softSwitchOff	= onOffButton.clicked
+mute			= muteButton.clicked
+unmute			= muteButton.clicked
+
+[sp]
+_controls 		= onOffButton:visible, chanPlusButton:visible, chanMinusButton:visible, volMinusButton:visible, volPlusButton:visible, muteButton:visible, channelField:visible, channelAcceptButton:visible, channelLabel:visible
+volumeUp		= volPlusButton.clicked
+volumeDown		= volMinusButton.clicked
+channelUp		= chanPlusButton.clicked
+channelDown		= chanMinusButton.clicked
+channelSelect	= channelAcceptButton.clicked^spmodel.getChannel()&channelField,channelLabel
+softSwitchOn	= onOffButton.clicked
+softSwitchOff	= onOffButton.clicked
+mute			= muteButton.clicked
+unmute			= muteButton.clicked
+
+[tv]
+_controls 			= onOffButton:enabled, standByLight:enabled
+performVolumeUp		= ^tvmodel.volumeUp(fc)
+performVolumeDown 	= ^tvmodel.volumeDown(fc)
+performChannelUp 	= ^tvmodel.channelUp(fc)
+performChannelDown	= ^tvmodel.channelDown(fc)
+gotoChannel 		= ^tvmodel.setChannel(fc)
+hardSwitchOff 		= onOffButton.clicked^tvmodel.switchOff()
+hardSwitchOn 		= onOffButton.clicked^tvmodel.switchOn()
+standBy				= ^tvmodel.standBy(fc)
+returnFromStandBy	= ^tvmodel.returnFromStandBy(fc)
+performMute			= ^tvmodel.mute(fc)
+performUnmute		= ^tvmodel.unmute(fc)

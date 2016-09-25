@@ -1,0 +1,84 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="system">
+<parallel id="system">
+<onexit>
+</onexit>
+<state id="mw_mw" initial="init_f34_8_mw_mw">
+<onexit>
+</onexit>
+<state id="init_f34_8_mw_mw">
+<transition event="sethour_mw" target="sethour_finished_mw_mw_9cd_9"/>
+<transition event="sethour_md" target="sethour_finished_md_mw_ee9_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="sethour_finished_mw_mw_9cd_9">
+<transition event="setmin_mw" target="setmin_finished_mw_mw_9cd_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="setmin_finished_mw_mw_9cd_9">
+<transition event="setsec_mw" target="setsec_finished_mw_mw_993_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="setsec_finished_mw_mw_993_8">
+<transition event="confirm_md" target="final_451_8_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_451_8_mw_mw">
+<onexit>
+</onexit>
+</final>
+<state id="sethour_finished_md_mw_ee9_b">
+<transition event="setmin_md" target="setmin_finished_md_mw_ee9_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="setmin_finished_md_mw_ee9_b">
+<transition event="setsec_mw" target="setsec_finished_mw_mw_993_8"/>
+<onexit>
+</onexit>
+</state>
+</state>
+<state id="md_md" initial="init_89e_a_md_md">
+<onexit>
+</onexit>
+<state id="init_89e_a_md_md">
+<transition event="sethour_mw" target="sethour_finished_mw_md_a5d_8"/>
+<transition event="sethour_md" target="sethour_finished_md_md_d19_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="sethour_finished_mw_md_a5d_8">
+<transition event="setmin_mw" target="setmin_finished_mw_md_a5d_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="setmin_finished_mw_md_a5d_8">
+<transition event="setsec_mw" target="setsec_finished_mw_md_e28_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="setsec_finished_mw_md_e28_b">
+<transition event="confirm_md" target="final_024_8_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_024_8_md_md">
+<onexit>
+</onexit>
+</final>
+<state id="sethour_finished_md_md_d19_a">
+<transition event="setmin_md" target="setmin_finished_md_md_d19_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="setmin_finished_md_md_d19_a">
+<transition event="setsec_mw" target="setsec_finished_mw_md_e28_b"/>
+<onexit>
+</onexit>
+</state>
+</state>
+</parallel>
+</scxml>

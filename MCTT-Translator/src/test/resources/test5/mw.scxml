@@ -1,0 +1,37 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_f34_8_mw_mw">
+<state id="init_f34_8_mw_mw">
+<transition event="sethour_mw" target="sethour_finished_mw_mw_9cd_9"/>
+<transition event="sethour_md" target="sethour_finished_md_mw_ee9_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="sethour_finished_mw_mw_9cd_9">
+<transition event="setmin_mw" target="setmin_finished_mw_mw_9cd_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="setmin_finished_mw_mw_9cd_9">
+<transition event="setsec_mw" target="setsec_finished_mw_mw_993_8"/>
+<onexit>
+</onexit>
+</state>
+<state id="setsec_finished_mw_mw_993_8">
+<transition event="confirm_md" target="final_451_8_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_451_8_mw_mw">
+<onexit>
+</onexit>
+</final>
+<state id="sethour_finished_md_mw_ee9_b">
+<transition event="setmin_md" target="setmin_finished_md_mw_ee9_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="setmin_finished_md_mw_ee9_b">
+<transition event="setsec_mw" target="setsec_finished_mw_mw_993_8"/>
+<onexit>
+</onexit>
+</state>
+</scxml>

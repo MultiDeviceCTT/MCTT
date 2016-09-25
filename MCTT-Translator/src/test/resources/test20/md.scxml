@@ -1,0 +1,84 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_cd0_a_md_md">
+<state id="init_cd0_a_md_md">
+<transition event="enterAddress_md" target="openAddress_md_md_e5f_a_l"/>
+<transition event="volumeUp_md" target="volumeUp_finished_md_md_e5f_a_r"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_cf1_9_md_e5f_a">
+<transition event="state.id.par_cf1_9_md" target="final_2d2_a_md_md"/>
+<onexit>
+</onexit>
+<state id="comp_ef4_9_md_md_e5f_a" initial="openAddress_md_md_e5f_a_l">
+<onexit>
+</onexit>
+<state id="openAddress_md_md_e5f_a_l">
+<transition event="openAddress_finished_md" target="final_536_8_md_md_e5f_a_l"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_536_8_md_md_e5f_a_l">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_456_b_md_md_e5f_a" initial="init_c64_b_md_md_e5f_a_l">
+<onexit>
+</onexit>
+<state id="init_c64_b_md_md_e5f_a_l">
+<transition event="volumeUp_md" target="volumeUp_finished_md_md_e5f_a_l"/>
+<onexit>
+</onexit>
+</state>
+<state id="volumeUp_finished_md_md_e5f_a_l">
+<transition event="volumeDown_md" target="final_27d_9_md_md_e5f_a_l"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_27d_9_md_md_e5f_a_l">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_2d2_a_md_md">
+<onexit>
+</onexit>
+</final>
+<parallel id="par_4b7_a_md_e5f_a">
+<transition event="state.id.par_4b7_a_md" target="final_2d2_a_md_md"/>
+<onexit>
+</onexit>
+<state id="comp_05f_8_md_md_e5f_a" initial="init_b47_a_md_md_e5f_a_r">
+<onexit>
+</onexit>
+<state id="init_b47_a_md_md_e5f_a_r">
+<transition event="enterAddress_md" target="openAddress_md_md_e5f_a_r"/>
+<onexit>
+</onexit>
+</state>
+<state id="openAddress_md_md_e5f_a_r">
+<transition event="openAddress_finished_md" target="final_840_8_md_md_e5f_a_r"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_840_8_md_md_e5f_a_r">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_a45_8_md_md_e5f_a" initial="volumeUp_finished_md_md_e5f_a_r">
+<onexit>
+</onexit>
+<state id="volumeUp_finished_md_md_e5f_a_r">
+<transition event="volumeDown_md" target="final_a95_b_md_md_e5f_a_r"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_a95_b_md_md_e5f_a_r">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+</scxml>

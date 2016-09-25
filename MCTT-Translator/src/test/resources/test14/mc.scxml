@@ -1,0 +1,76 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_c16_a_mc_mc">
+<state id="init_c16_a_mc_mc">
+<transition event="selectPizza_mw" target="pending_07a_8_md_mc_056_b_afa_a"/>
+<transition event="selectPizza_md" target="pending_7a1_b_md_mc_fab_9_5f1_b"/>
+<transition event="selectPizza_mc" target="pending_b20_a_md_mc_273_b_3f8_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_07a_8_md_mc_056_b_afa_a">
+<transition event="showPizzaImage_finished_md" target="showPizzaImage_finished_finished_md_mc_056_b_afa_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="showPizzaImage_finished_finished_md_mc_056_b_afa_a">
+<transition event="confirmSelection_mw" target="pending_e0c_b_mw_mc_056_b_c62_9"/>
+<transition event="confirmSelection_md" target="pending_e0c_b_mw_mc_056_b_c62_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_e0c_b_mw_mc_056_b_c62_9">
+<transition event="defrost_finished_mw" target="pending_b86_b_mw_mc_056_b_c62_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_b86_b_mw_mc_056_b_c62_9">
+<transition event="cook_finished_mw" target="final_bf9_b_mc_mc"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_bf9_b_mc_mc">
+<onexit>
+</onexit>
+</final>
+<state id="pending_7a1_b_md_mc_fab_9_5f1_b">
+<transition event="showPizzaImage_finished_md" target="showPizzaImage_finished_finished_md_mc_fab_9_5f1_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="showPizzaImage_finished_finished_md_mc_fab_9_5f1_b">
+<transition event="confirmSelection_mw" target="pending_ac7_b_mw_mc_fab_9_ea0_b"/>
+<transition event="confirmSelection_md" target="pending_ac7_b_mw_mc_fab_9_ea0_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_ac7_b_mw_mc_fab_9_ea0_b">
+<transition event="defrost_finished_mw" target="pending_c1b_8_mw_mc_fab_9_ea0_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_c1b_8_mw_mc_fab_9_ea0_b">
+<transition event="cook_finished_mw" target="final_bf9_b_mc_mc"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_b20_a_md_mc_273_b_3f8_9">
+<transition event="showPizzaImage_finished_md" target="showPizzaImage_finished_finished_md_mc_273_b_3f8_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="showPizzaImage_finished_finished_md_mc_273_b_3f8_9">
+<transition event="confirmSelection_mw" target="pending_4fa_9_mw_mc_273_b_0e8_b"/>
+<transition event="confirmSelection_md" target="pending_4fa_9_mw_mc_273_b_0e8_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_4fa_9_mw_mc_273_b_0e8_b">
+<transition event="defrost_finished_mw" target="pending_1ec_a_mw_mc_273_b_0e8_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_1ec_a_mw_mc_273_b_0e8_b">
+<transition event="cook_finished_mw" target="final_bf9_b_mc_mc"/>
+<onexit>
+</onexit>
+</state>
+</scxml>

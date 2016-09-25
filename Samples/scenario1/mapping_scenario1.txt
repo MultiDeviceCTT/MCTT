@@ -1,0 +1,47 @@
+[sp]
+_controls 				= modeCombo:visible, foodCombo:visible, pizzaCombo:visible, minInput:visible, secInput:visible, powerInput:visible, bell:visible, statusField:visible, confirmButton:enabled, resetButton:enabled
+selectAutomaticMode 	= confirmButton.clicked/modeCombo.currentText === "auto mode"&modeCombo
+selectPizza 			= confirmButton.clicked/foodCombo.currentText === "Pizza"&foodCombo
+choosePizza 			= confirmButton.clicked^spmodel.showSelectedPizza()&pizzaCombo
+confirmSelectedPizza 	= confirmButton.clicked^spmodel.getSelectedPizza()
+notifyPizzaFinished		= ^spmodel.notifyPizzaFinished(cb)&bell,statusField
+confirmPizzaAlarm		= confirmButton.clicked
+selectFish				= confirmButton.clicked/foodCombo.currentText === "Fish"&foodCombo
+notifyFishFinished		= ^spmodel.notifyFishFinished(cb)&bell,statusField
+confirmFishAlarm		= confirmButton.clicked
+selectManual			= confirmButton.clicked/modeCombo.currentText === "manual mode"&modeCombo
+setMinutes				= minInput.editingFinished^spmodel.getMinutes()&secInput,powerInput
+setSeconds				= secInput.editingFinished^spmodel.getSeconds()&minInput,powerInput
+setPower				= powerInput.editingFinished^spmodel.getPower()&secInput,minInput
+showConfiguration		= ^spmodel.showConfiguration(cb)&statusField
+confirm 				= confirmButton.clicked^spmodel.confirmConfiguration()
+notifyManualFinished	= ^spmodel.notifyManualFinished(cb)&bell,statusField
+confirmManualAlarm		= confirmButton.clicked^spmodel.confirmAlarm()
+reset					= resetButton.clicked^spmodel.reset()
+
+[mw]
+_controls 				= autoButton:visible, manualButton:visible, pizzaButton:visible, fishButton:visible, confirmButton:enabled, resetButton:enabled, statusField:visible, bell:visible, minInputText:visible, minInput:visible, secInputText:visible, secInput:visible, powerInputText:visible, powerInput:visible, pizzaGroupBox:visible
+selectAutomaticMode 	= autoButton.clicked
+selectPizza 			= pizzaButton.clicked
+choosePizza 			= confirmButton.clicked^mwmodel.choosePizza()&pizzaGroupBox
+confirmSelectedPizza 	= confirmButton.clicked^mwmodel.sendPizza()&statusField
+defrost 				= ^mwmodel.defrost(cb)&statusField
+bake 					= ^mwmodel.bake(cb)&statusField
+notifyPizzaFinished		= ^mwmodel.pizzaAlarm(cb)&statusField,bell
+confirmPizzaAlarm		= confirmButton.clicked^mwmodel.confirmAlarm()
+selectFish				= fishButton.clicked
+cook					= ^mwmodel.cook(cb)&statusField
+notifyFishFinished		= ^mwmodel.fishAlarm(cb)&bell
+confirmFishAlarm		= confirmButton.clicked
+selectManual			= manualButton.clicked
+setMinutes				= confirmButton.clicked^mwmodel.getMinutes()&minInput,minInputText
+setSeconds				= confirmButton.clicked^mwmodel.getSeconds()&secInput,secInputText
+setPower				= confirmButton.clicked^mwmodel.getPower()&powerInput,powerInputText
+showConfiguration		= ^mwmodel.showConfiguration(cb)&statusField
+confirm 				= confirmButton.clicked
+enableHeater			= ^mwmodel.enableHeater(cb)
+countdown				= ^mwmodel.countdown(cb)&statusField
+disableHeater			= ^mwmodel.disableHeater(cb)
+notifyManualFinished	= ^mwmodel.manualAlarm(cb)&bell
+confirmManualAlarm		= confirmButton.clicked^mwmodel.confirmAlarm()
+reset					= resetButton.clicked^mwmodel.reset()

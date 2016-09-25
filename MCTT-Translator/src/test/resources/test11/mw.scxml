@@ -1,0 +1,52 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_c24_9_mw_mw">
+<state id="init_c24_9_mw_mw">
+<transition event="selectPizza_mw" target="pending_e13_9_md_mw_763_8_432_b"/>
+<transition event="selectPizza_md" target="pending_a0a_a_md_mw_7a0_9_cc6_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_e13_9_md_mw_763_8_432_b">
+<transition event="showPizzaImage_finished_md" target="showPizzaImage_finished_finished_md_mw_763_8_432_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="showPizzaImage_finished_finished_md_mw_763_8_432_b">
+<transition event="confirmSelection_mw" target="defrost_mw_mw_763_8_667_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="defrost_mw_mw_763_8_667_a">
+<transition event="defrost_finished_mw" target="cook_mw_mw_763_8_667_a"/>
+<onexit>
+</onexit>
+</state>
+<state id="cook_mw_mw_763_8_667_a">
+<transition event="cook_finished_mw" target="final_53d_b_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_53d_b_mw_mw">
+<onexit>
+</onexit>
+</final>
+<state id="pending_a0a_a_md_mw_7a0_9_cc6_b">
+<transition event="showPizzaImage_finished_md" target="showPizzaImage_finished_finished_md_mw_7a0_9_cc6_b"/>
+<onexit>
+</onexit>
+</state>
+<state id="showPizzaImage_finished_finished_md_mw_7a0_9_cc6_b">
+<transition event="confirmSelection_mw" target="defrost_mw_mw_7a0_9_493_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="defrost_mw_mw_7a0_9_493_9">
+<transition event="defrost_finished_mw" target="cook_mw_mw_7a0_9_493_9"/>
+<onexit>
+</onexit>
+</state>
+<state id="cook_mw_mw_7a0_9_493_9">
+<transition event="cook_finished_mw" target="final_53d_b_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+</scxml>

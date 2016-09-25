@@ -1,0 +1,104 @@
+<scxml version="1.0" xmlns="http://www.w3.org/2005/07/scxml" initial="init_c42_b_md_md">
+<state id="init_c42_b_md_md">
+<transition event="setCooking_mw" target="setCooking_finished_mw_md_mw_mw"/>
+<transition event="setCooking_md" target="setCooking_finished_md_md_md_md"/>
+<onexit>
+</onexit>
+</state>
+<parallel id="par_4a6_a_md_mw">
+<transition event="state.id.par_4a6_a_md" target="final_720_a_md_md"/>
+<onexit>
+</onexit>
+<state id="comp_e9e_b_md_md_mw_mw" initial="setCooking_finished_mw_md_mw_mw">
+<onexit>
+</onexit>
+<state id="setCooking_finished_mw_md_mw_mw">
+<transition event="setPower_md" target="pending_21c_b_mw_md_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_21c_b_mw_md_mw_mw">
+<transition event="showConfig_finished_mw" target="final_de9_a_md_md_mw_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_de9_a_md_md_mw_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_46a_9_md_md_mw_md" initial="init_0dd_a_md_md_mw_md">
+<onexit>
+</onexit>
+<state id="init_0dd_a_md_md_mw_md">
+<transition event="setCooking_md" target="setCooking_finished_md_md_mw_md"/>
+<onexit>
+</onexit>
+</state>
+<state id="setCooking_finished_md_md_mw_md">
+<transition event="setPower_md" target="showConfig_md_md_mw_md"/>
+<onexit>
+</onexit>
+</state>
+<state id="showConfig_md_md_mw_md">
+<transition event="showConfig_finished_md" target="final_ee3_9_md_md_mw_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_ee3_9_md_md_mw_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+<final id="final_720_a_md_md">
+<onexit>
+</onexit>
+</final>
+<parallel id="par_839_9_md_md">
+<transition event="state.id.par_839_9_md" target="final_720_a_md_md"/>
+<onexit>
+</onexit>
+<state id="comp_bbd_a_md_md_md_mw" initial="init_467_a_md_md_md_mw">
+<onexit>
+</onexit>
+<state id="init_467_a_md_md_md_mw">
+<transition event="setCooking_mw" target="setCooking_finished_mw_md_md_mw"/>
+<onexit>
+</onexit>
+</state>
+<state id="setCooking_finished_mw_md_md_mw">
+<transition event="setPower_md" target="pending_301_a_mw_md_md_mw"/>
+<onexit>
+</onexit>
+</state>
+<state id="pending_301_a_mw_md_md_mw">
+<transition event="showConfig_finished_mw" target="final_e6d_a_md_md_md_mw"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_e6d_a_md_md_md_mw">
+<onexit>
+</onexit>
+</final>
+</state>
+<state id="comp_338_9_md_md_md_md" initial="setCooking_finished_md_md_md_md">
+<onexit>
+</onexit>
+<state id="setCooking_finished_md_md_md_md">
+<transition event="setPower_md" target="showConfig_md_md_md_md"/>
+<onexit>
+</onexit>
+</state>
+<state id="showConfig_md_md_md_md">
+<transition event="showConfig_finished_md" target="final_8e9_9_md_md_md_md"/>
+<onexit>
+</onexit>
+</state>
+<final id="final_8e9_9_md_md_md_md">
+<onexit>
+</onexit>
+</final>
+</state>
+</parallel>
+</scxml>
