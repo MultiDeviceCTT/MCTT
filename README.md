@@ -62,3 +62,9 @@ This results in the following microwave interface:
 Both client instances automatically connect to the server and initialize their state machines. You can now press a button on any of the device and see the corresponding reactions on both devices.
 
 # Publications
+Wagner A. and Prehofer C. (2016). Translating Task Models to State Machines.In Proceedings of the 4th International Conference on Model-Driven Engineering and Software Development
+
+Prehofer C., Wagner A. and Jin Y. (2016) A Model-based Approach for Multi-Device User Interactions. tba.
+
+# Copyright
+Copyright (c) Andreas Wagner. All rights reserved.
