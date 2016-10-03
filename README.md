@@ -67,4 +67,4 @@ Wagner A. and Prehofer C. (2016). Translating Task Models to State Machines. In 
 Prehofer C., Wagner A. and Jin Y. (2016). A Model-based Approach for Multi-Device User Interactions. tba.
 
 # Copyright
-Copyright (c) Andreas Wagner. All rights reserved.
+Copyright (c) 2016 Andreas Wagner. All rights reserved.
